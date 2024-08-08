@@ -1,0 +1,87 @@
+Aug-08 16:37:28.743 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf
+Aug-08 16:37:28.818 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 24.04.2
+Aug-08 16:37:28.833 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/marta_fogt/.nextflow/plugins; core-plugins: nf-amazon@2.5.2,nf-azure@1.6.0,nf-cloudcache@0.4.1,nf-codecommit@0.2.0,nf-console@1.1.3,nf-ga4gh@1.3.0,nf-google@1.13.2,nf-tower@1.9.1,nf-wave@1.4.2
+Aug-08 16:37:28.842 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Aug-08 16:37:28.842 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Aug-08 16:37:28.845 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.10.0 in 'deployment' mode
+Aug-08 16:37:28.853 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Aug-08 16:37:28.886 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /home/marta_fogt/PhD/nf_test/nextflow.config
+Aug-08 16:37:28.889 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /home/marta_fogt/PhD/nf_test/nextflow.config
+Aug-08 16:37:28.916 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/marta_fogt/.nextflow/secrets/store.json
+Aug-08 16:37:28.918 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@6dc1484] - activable => nextflow.secret.LocalSecretsProvider@6dc1484
+Aug-08 16:37:28.922 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Aug-08 16:37:29.201 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 by global default
+Aug-08 16:37:29.210 [main] DEBUG nextflow.cli.CmdRun - Launching `main.nf` [small_gutenberg] DSL2 - revision: afaf659ebf
+Aug-08 16:37:29.211 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Aug-08 16:37:29.211 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Aug-08 16:37:29.251 [main] DEBUG nextflow.Session - Session UUID: a5400b6e-8ce6-4343-8252-2bb41af03681
+Aug-08 16:37:29.251 [main] DEBUG nextflow.Session - Run name: small_gutenberg
+Aug-08 16:37:29.252 [main] DEBUG nextflow.Session - Executor pool size: 12
+Aug-08 16:37:29.259 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Aug-08 16:37:29.264 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=36; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Aug-08 16:37:29.279 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 24.04.2 build 5914
+  Created: 29-05-2024 06:19 UTC (08:19 CEST)
+  System: Linux 6.5.0-44-generic
+  Runtime: Groovy 4.0.21 on OpenJDK 64-Bit Server VM 18.0.2-ea+9-Ubuntu-222.04
+  Encoding: UTF-8 (UTF-8)
+  Process: 200962@a0477.int.ardigen.com [127.0.1.1]
+  CPUs: 12 - Mem: 15.3 GB (2.4 GB) - Swap: 1.9 GB (1.7 GB)
+Aug-08 16:37:29.295 [main] DEBUG nextflow.Session - Work-dir: /home/marta_fogt/PhD/nf_test/work [ext2/ext3]
+Aug-08 16:37:29.295 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/marta_fogt/PhD/nf_test/bin
+Aug-08 16:37:29.302 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Aug-08 16:37:29.309 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Aug-08 16:37:29.330 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Aug-08 16:37:29.337 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 13; maxThreads: 1000
+Aug-08 16:37:29.395 [main] DEBUG nextflow.Session - Session start
+Aug-08 16:37:29.506 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Aug-08 16:37:29.559 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:kneaddata_filtering` matches process kneaddata_filtering
+Aug-08 16:37:29.562 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Aug-08 16:37:29.562 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Aug-08 16:37:29.567 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Aug-08 16:37:29.571 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=12; memory=15.3 GB; capacity=12; pollInterval=100ms; dumpInterval=5m
+Aug-08 16:37:29.573 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Aug-08 16:37:29.631 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: kneaddata_filtering
+Aug-08 16:37:29.631 [main] DEBUG nextflow.Session - Igniting dataflow network (1)
+Aug-08 16:37:29.632 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > kneaddata_filtering
+Aug-08 16:37:29.632 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_38f72c0e7b9273a6: /home/marta_fogt/PhD/nf_test/main.nf
+Aug-08 16:37:29.632 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Aug-08 16:37:29.632 [main] DEBUG nextflow.Session - Session await
+Aug-08 16:37:29.746 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Aug-08 16:37:29.748 [Task submitter] INFO  nextflow.Session - [72/45228d] Submitted process > kneaddata_filtering
+Aug-08 16:37:30.362 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: kneaddata_filtering; status: COMPLETED; exit: 1; error: -; workDir: /home/marta_fogt/PhD/nf_test/work/72/45228ddfc1689c2c70045f3c5be247]
+Aug-08 16:37:30.362 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=36; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Aug-08 16:37:30.366 [TaskFinalizer-1] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=kneaddata_filtering; work-dir=/home/marta_fogt/PhD/nf_test/work/72/45228ddfc1689c2c70045f3c5be247
+  error [nextflow.exception.ProcessFailedException]: Process `kneaddata_filtering` terminated with an error exit status (1)
+Aug-08 16:37:30.376 [TaskFinalizer-1] ERROR nextflow.processor.TaskProcessor - Error executing process > 'kneaddata_filtering'
+
+Caused by:
+  Process `kneaddata_filtering` terminated with an error exit status (1)
+
+
+Command executed:
+
+  kneaddata --help > "/home/marta_fogt/PhD/nf_test/results//kneaddata_help.txt"
+
+Command exit status:
+  1
+
+Command output:
+  (empty)
+
+Command error:
+  .command.sh: line 2: /home/marta_fogt/PhD/nf_test/results//kneaddata_help.txt: No such file or directory
+
+Work dir:
+  /home/marta_fogt/PhD/nf_test/work/72/45228ddfc1689c2c70045f3c5be247
+
+Tip: you can try to figure out what's wrong by changing to the process work dir and showing the script file named `.command.sh`
+Aug-08 16:37:30.380 [main] DEBUG nextflow.Session - Session await > all processes finished
+Aug-08 16:37:30.383 [TaskFinalizer-1] DEBUG nextflow.Session - Session aborted -- Cause: Process `kneaddata_filtering` terminated with an error exit status (1)
+Aug-08 16:37:30.396 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Aug-08 16:37:30.396 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Aug-08 16:37:30.404 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=1; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=583ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=1; peakCpus=1; peakMemory=0; ]
+Aug-08 16:37:30.595 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Aug-08 16:37:30.618 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
