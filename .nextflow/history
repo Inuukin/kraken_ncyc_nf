@@ -1,4 +1,0 @@
-2024-08-13 18:06:20	-	friendly_bhaskara	-	822ac3a2b30c395d24ed31c9c95d332b	c84fb967-e3d8-4fe7-8387-2e4936a70bc4	nextflow run main.nf
-2024-08-13 18:06:33	2.9s	shrivelled_hopper	ERR	9144a3371a39b9ba2d580f5fbc6e074c	6e4830a5-44b4-4067-a05c-b79d7b553614	nextflow run main.nf
-2024-08-13 18:10:27	5.3s	determined_bose	OK	7262cb8712347385a16e72533ae375ac	5d92861e-360c-44dc-98ec-d6b4a4372fff	nextflow run main.nf
-2024-08-13 18:11:13	5.8s	angry_baekeland	OK	b3c3c5de3e2ef21bfe475fd830f216c9	ebef52f1-ed0e-4fa1-9c34-4b8a3b322f2c	nextflow run main.nf
