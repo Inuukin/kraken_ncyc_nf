@@ -1,0 +1,79 @@
+Aug-13 18:10:26.592 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf
+Aug-13 18:10:26.661 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 24.04.2
+Aug-13 18:10:26.684 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/marta_fogt/.nextflow/plugins; core-plugins: nf-amazon@2.5.2,nf-azure@1.6.0,nf-cloudcache@0.4.1,nf-codecommit@0.2.0,nf-console@1.1.3,nf-ga4gh@1.3.0,nf-google@1.13.2,nf-tower@1.9.1,nf-wave@1.4.2
+Aug-13 18:10:26.692 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Aug-13 18:10:26.693 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Aug-13 18:10:26.695 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.10.0 in 'deployment' mode
+Aug-13 18:10:26.703 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Aug-13 18:10:26.723 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /home/marta_fogt/PhD/kraken_ncyc_nf/nextflow.config
+Aug-13 18:10:26.725 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /home/marta_fogt/PhD/kraken_ncyc_nf/nextflow.config
+Aug-13 18:10:26.745 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/marta_fogt/.nextflow/secrets/store.json
+Aug-13 18:10:26.747 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@2fb5fe30] - activable => nextflow.secret.LocalSecretsProvider@2fb5fe30
+Aug-13 18:10:26.751 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Aug-13 18:10:27.029 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declaration
+Aug-13 18:10:27.038 [main] DEBUG nextflow.cli.CmdRun - Launching `main.nf` [determined_bose] DSL2 - revision: 7262cb8712
+Aug-13 18:10:27.040 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Aug-13 18:10:27.040 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Aug-13 18:10:27.079 [main] DEBUG nextflow.Session - Session UUID: 5d92861e-360c-44dc-98ec-d6b4a4372fff
+Aug-13 18:10:27.080 [main] DEBUG nextflow.Session - Run name: determined_bose
+Aug-13 18:10:27.081 [main] DEBUG nextflow.Session - Executor pool size: 12
+Aug-13 18:10:27.088 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Aug-13 18:10:27.094 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=36; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Aug-13 18:10:27.108 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 24.04.2 build 5914
+  Created: 29-05-2024 06:19 UTC (08:19 CEST)
+  System: Linux 6.5.0-44-generic
+  Runtime: Groovy 4.0.21 on OpenJDK 64-Bit Server VM 18.0.2-ea+9-Ubuntu-222.04
+  Encoding: UTF-8 (UTF-8)
+  Process: 171364@a0477.int.ardigen.com [127.0.1.1]
+  CPUs: 12 - Mem: 15.3 GB (1.9 GB) - Swap: 1.9 GB (1.9 GB)
+Aug-13 18:10:27.124 [main] DEBUG nextflow.Session - Work-dir: /home/marta_fogt/PhD/kraken_ncyc_nf/work [ext2/ext3]
+Aug-13 18:10:27.139 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Aug-13 18:10:27.146 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Aug-13 18:10:27.167 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Aug-13 18:10:27.175 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 13; maxThreads: 1000
+Aug-13 18:10:27.220 [main] DEBUG nextflow.Session - Session start
+Aug-13 18:10:27.398 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Aug-13 18:10:27.672 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Aug-13 18:10:27.673 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Aug-13 18:10:27.677 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Aug-13 18:10:27.682 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=12; memory=15.3 GB; capacity=12; pollInterval=100ms; dumpInterval=5m
+Aug-13 18:10:27.684 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Aug-13 18:10:27.733 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:KNEADDATA` matches process KNEADDATA
+Aug-13 18:10:27.735 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Aug-13 18:10:27.735 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Aug-13 18:10:27.738 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: KNEADDATA, FASTQC_RAW, FASTQC
+Aug-13 18:10:27.739 [main] DEBUG nextflow.Session - Igniting dataflow network (3)
+Aug-13 18:10:27.743 [PathVisitor-1] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: /home/marta_fogt/PhD/kraken_ncyc_nf/test_data/; pattern: *_R{1,2}.fastq.gz; options: [:]
+Aug-13 18:10:27.743 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > FASTQC_RAW
+Aug-13 18:10:27.744 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > KNEADDATA
+Aug-13 18:10:27.745 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_974b2dc78181ff73: /home/marta_fogt/PhD/kraken_ncyc_nf/main.nf
+  Script_9d4e3b2a7a64637c: /home/marta_fogt/PhD/kraken_ncyc_nf/./bin/kneaddata.nf
+  Script_ffca7d5f1c715658: /home/marta_fogt/PhD/kraken_ncyc_nf/./bin/fastqc.nf
+Aug-13 18:10:27.745 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Aug-13 18:10:27.745 [main] DEBUG nextflow.Session - Session await
+Aug-13 18:10:27.855 [Actor Thread 6] DEBUG nextflow.util.HashBuilder - Unable to get file attributes file: /pre_fastqc -- Cause: java.nio.file.NoSuchFileException: /pre_fastqc
+Aug-13 18:10:27.855 [Actor Thread 11] DEBUG nextflow.util.HashBuilder - Unable to get file attributes file: /pre_fastqc -- Cause: java.nio.file.NoSuchFileException: /pre_fastqc
+Aug-13 18:10:27.865 [Actor Thread 12] WARN  nextflow.script.ScriptBinding - Access to undefined parameter `db_` -- Initialise it to a default value eg. `params.db_ = some_value`
+Aug-13 18:10:27.911 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Aug-13 18:10:27.912 [Task submitter] INFO  nextflow.Session - [a4/d92511] Submitted process > FASTQC_RAW (2)
+Aug-13 18:10:27.925 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Aug-13 18:10:27.926 [Task submitter] INFO  nextflow.Session - [09/70dcec] Submitted process > FASTQC_RAW (1)
+Aug-13 18:10:27.936 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Aug-13 18:10:27.937 [Task submitter] INFO  nextflow.Session - [ff/54b6a6] Submitted process > KNEADDATA (1)
+Aug-13 18:10:27.947 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Aug-13 18:10:27.948 [Task submitter] INFO  nextflow.Session - [4a/764da1] Submitted process > KNEADDATA (2)
+Aug-13 18:10:28.815 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: KNEADDATA (2); status: COMPLETED; exit: 0; error: -; workDir: /home/marta_fogt/PhD/kraken_ncyc_nf/work/4a/764da115e21eb438cdc5b3673d800d]
+Aug-13 18:10:28.816 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=36; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Aug-13 18:10:29.074 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: KNEADDATA (1); status: COMPLETED; exit: 0; error: -; workDir: /home/marta_fogt/PhD/kraken_ncyc_nf/work/ff/54b6a6524c8093563534dbfcf93661]
+Aug-13 18:10:31.910 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 4; name: FASTQC_RAW (2); status: COMPLETED; exit: 0; error: -; workDir: /home/marta_fogt/PhD/kraken_ncyc_nf/work/a4/d92511a1b69ed02219fa2a003958ad]
+Aug-13 18:10:32.008 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: FASTQC_RAW (1); status: COMPLETED; exit: 0; error: -; workDir: /home/marta_fogt/PhD/kraken_ncyc_nf/work/09/70dcec15ec7452ffff6b444e0ce741]
+Aug-13 18:10:32.009 [main] DEBUG nextflow.Session - Session await > all processes finished
+Aug-13 18:10:32.111 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Aug-13 18:10:32.111 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Aug-13 18:10:32.116 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'TaskFinalizer' shutdown completed (hard=false)
+Aug-13 18:10:32.123 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=4; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=9.8s; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=4; peakCpus=4; peakMemory=0; ]
+Aug-13 18:10:32.264 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Aug-13 18:10:32.269 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
+Aug-13 18:10:32.270 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

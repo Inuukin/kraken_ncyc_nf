@@ -14,7 +14,7 @@
     script:
         if (params.paired == "TRUE")
         """
-        kneaddata --input1 ${reads[0]} --input2 ${reads[1]} -db ${params.phix_genome} --output ${params.results}/${sample_id} --bypass-trf
+        kneaddata --input1 ${reads[0]} --input2 ${reads[1]} -db ${params.phix_genome} --output ${params.results}/kneaddata --bypass-trf
         """
         else
         """

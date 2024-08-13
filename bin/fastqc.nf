@@ -1,24 +1,22 @@
- /*
+/*
  * FastQC
-*/
- 
- process FASTQC {
-    container 'ghcr.io/inuukin/kraken2_ncyc_dockers/kneaddata:0.12.0'
+ */
 
-    publishDir "${params.results}/kneaddata", mode: 'copy'
+process FASTQC {
+    container 'biocontainers/fastqc:v0.11.9_cv8'
 
+    publishDir "${params.results}/${output_dir}", mode: 'copy'
 
     input:
     tuple val(sample_id), file(reads)
 
+    input:
+    path output_dir
+
     script:
-        if (params.paired == "TRUE")
-        """
-        kneaddata --input1 ${reads[0]} --input2 ${reads[1]} -db ${params.phix_genome} --output ${params.results}/${sample_id} --bypass-trf
-        """
-        else
-        """
-        kneaddata --unpaired ${reads[0]} -db ${params.db_} -db ${params.phix_genome} --output ${params.results}/${sample_id}
-        """
+    """
+    mkdir -p "${params.results}/${output_dir}"
+    fastqc ${reads[0]} ${reads[1]} -o "${params.results}/${output_dir}"
+    """ 
 
  }
